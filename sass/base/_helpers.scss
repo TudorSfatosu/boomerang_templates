@@ -1,0 +1,300 @@
+// TODO @Tudor polyfills
+
+// No Paddings and margins
+@each $bp-name in $bp-hyphenated-list {
+  @include mq(str-slice(#{$bp-name}, 2, 3)) {
+    // No mp
+    .no-mp#{$bp-name} {
+      margin: 0;
+      padding: 0;
+    }
+    // NO mp - top right bottom left
+    @each $cardinal in $cardinals {
+      .no-#{$cardinal}-mp#{$bp-name} {
+        margin-#{$cardinal}: 0;
+        padding-#{$cardinal}: 0;
+      }
+    }
+    // No vertical mp
+    .no-vert-mp#{$bp-name} {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    // No lateral mp
+    .no-lat-mp#{$bp-name} {
+      margin-left: 0;
+      padding-left: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    // No p
+    .no-p#{$bp-name} {
+      padding: 0;
+    }
+    // NO p - top right bottom left
+    @each $cardinal in $cardinals {
+      .no-#{$cardinal}-p#{$bp-name} {
+        padding-#{$cardinal}: 0;
+      }
+    }
+    // No vertical p
+    .no-vert-p#{$bp-name} {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    // No lateral p
+    .no-lat-p#{$bp-name} {
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    // No m
+    .no-m#{$bp-name} {
+      margin: 0;
+    }
+    // NO m - top right bottom left
+    @each $cardinal in $cardinals {
+      .no-#{$cardinal}-m#{$bp-name} {
+        margin-#{$cardinal}: 0;
+        padding-#{$cardinal}: 0;
+      }
+    }
+    // No vertical m
+    .no-vert-m#{$bp-name} {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    // No lateral m
+    .no-lat-m#{$bp-name} {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.thirty-top-p--sm {
+  @include mq(sm) {
+    padding-top: 30px;
+  }
+}
+
+// Custom paddings and margins
+@each $numeral, $px-value in $numerals-px-map {
+  // Margins sequence
+  .#{$numeral}-m {
+    margin: $px-value;
+  }
+  // top right bottom left
+  @each $cardinal in $cardinals {
+    .#{$numeral}-#{$cardinal}-m {
+      margin-#{$cardinal}: $px-value;
+    }
+  }
+  // vertical
+  .#{$numeral}-vert-m {
+    margin-top: $px-value;
+    margin-bottom: $px-value;
+  }
+  // lateral
+  .#{$numeral}-lat-m {
+    margin-left: $px-value;
+    margin-right: $px-value;
+  }
+
+  // Paddings sequence
+  .#{$numeral}-p {
+    padding: $px-value;
+  }
+  // top right bottom left
+  @each $cardinal in $cardinals {
+    .#{$numeral}-#{$cardinal}-p {
+      padding-#{$cardinal}: $px-value;
+    }
+  }
+  // vertical
+  .#{$numeral}-vert-p {
+    padding-top: $px-value;
+    padding-bottom: $px-value;
+  }
+  // lateral
+  .#{$numeral}-lat-p {
+    padding-left: $px-value;
+    padding-right: $px-value;
+  }
+}
+
+// .hide-xs, .hide-sm, etc.
+@each $bp-name in $bp-list {
+  @include mq($bp-name) {
+    .hide-#{$bp-name} {
+      display: none !important;
+    }
+  }
+}
+
+// Flex Reordering for small screens
+@include mq(xs) {
+  .xs-flex-order-container {
+    display: flex;
+    flex-direction: column;
+  }
+  // ordinals
+  @each $ordinal, $number in $ordinals-map {
+    .flex-item-xs-#{$ordinal} {
+      order: $number;
+    }
+  }
+}
+
+@each $bp-name in $bp-list {
+  @include mq($bp-name) {
+    .pull-right-#{$bp-name} {
+      float: right;
+    }
+    .pull-left-#{$bp-name} {
+      float: left;
+    }
+    .text-right-#{$bp-name} {
+      text-align: right;
+    }
+    .text-left-#{$bp-name} {
+      text-align: left;
+    }
+    .text-center-#{$bp-name} {
+      text-align: center;
+    }
+  }
+}
+
+// Breakpoint bar helper
+.resp-break-color {
+  @include mq(xs) {
+    background: $red-xs;
+  }
+  @include mq(sm) {
+    background: $blue-sm;
+  }
+  @include mq(md) {
+    background: $green-md;
+  }
+  @include mq(lg) {
+    background: $yellow-lg;
+  }
+}
+
+.breakpoint-text:after {
+  @include mq(xs) {
+    content: "XS";
+  }
+  @include mq(sm) {
+    content: "SM";
+  }
+  @include mq(md) {
+    content: "MD";
+  }
+  @include mq(lg) {
+    content: "LG";
+  }
+}
+
+.breakpoint-text {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.white-text-hover-container a:hover,
+.white-text-hover-container a:focus {
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// For svg icons
+.icon-vm-centering {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-vb-centering {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.vertical-centering {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  margin: auto;
+}
+
+a.href-block {
+  display: block;
+}
+
+.center-me {
+  margin: 0 auto;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.auto-horiz-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover-inline-important {
+  display: inline-block;
+  background-repeat-x: no-repeat !important;
+  background-repeat-y: no-repeat !important;
+  background-position-x: center !important;
+  background-position-y: top !important;
+  background-size: cover !important;
+}
+
+.no-hover-underline:hover,
+.no-hover-underline:focus {
+  text-decoration: none;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.awesome {
+  @include spread-value(margin-bottom, .6em, 1.6em);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  @include mq(sm) {
+    overflow: initial;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.img-responsive {
+  width: 100%;
+}

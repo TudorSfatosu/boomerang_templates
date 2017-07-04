@@ -1,0 +1,74 @@
+// fonts
+/*
+$quicksand-bold: "QuicksandLight";
+$quicksand-light: "QuicksandBold";
+$hijrnotes: "Hijrnotes";
+
+
+// typography
+$font-list: "quicksand-bold" "quicksand-light" "hijrnotes";
+*/
+
+
+// colors
+$black: #000000;
+$white: #ffffff;
+$opaque: #212121;
+$grey: #91948f;
+$blue: #152C54;
+$red: #e30513;
+
+// colors set array
+// TODO - TOPONDER Is there a way to merge the array with the values?
+$colors: (
+        black: $black,
+        black-hover: $white,
+        white: $white,
+        white-hover: darken($white, 3%),
+        opaque: $opaque,
+        opaque-hover: $white,
+        grey: $grey,
+        grey-hover: darken($grey, 3%),
+        red: $red,
+        red-hover: lighten($red, 21%),
+        blue: $blue,
+        blue-hover: lighten($blue, 21%)
+);
+
+//layout breakpoints
+// TODO @Tudor join the array and non-array
+$xs: 767px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1617px;
+
+$breakpoints: (
+        xs: 767px,
+        sm: 768px,
+        md: 992px,
+        lg: 1200px,
+        xl: 1617px
+);
+
+// breakpoints arrays
+$bp-list: "xs" "sm" "md" "lg" "xl";
+$bp-hyphenated-list: null "-xs" "-sm" "-md" "-lg" "-xl";
+// TODO @Tudor - join one-to-five as an associative array with bp-list
+$one-to-five: 1 2 3 4 5;
+
+// breakpoints colors
+$red-xs: #e05252;
+$blue-sm: #5a9bfc;
+$green-md: #57a264;
+$yellow-lg: #d1963d;
+
+// sizes, numbers, numerals and ordinals
+$numerals-px-map: (five: 5px, ten: 10px, fifteen: 15px, twenty: 20px, twenty-five: 25px, thirty: 30px, forty: 40px, fifty: 50px, sixty: 60px, seventy: 70px, eighty: 80px, ninety: 90px, one-hundred: 100px);
+$ordinals-map: (1st: 1, 2nd: 2, 3rd: 3, 4th: 4, 5th: 5, 6th: 6, 7th: 7, 8th: 8, 9th: 9);
+
+// top right bottom left
+$cardinals: "top" "right" "bottom" "left";
+
+// images-array
+$png-image-names: "blog1" "blog2";

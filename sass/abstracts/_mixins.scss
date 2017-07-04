@@ -1,0 +1,222 @@
+// Breakpoints mixin
+@mixin mq($class) {
+  @if $class == "" {
+    @content;
+  } @else if $class == xs {
+    @media (max-width: $xs) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: $sm) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: $md) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: $lg) {
+      @content;
+    }
+  } @else if $class == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg; Yours is:" $class;
+  }
+}
+
+// Orientation mixin
+// TODO Split into portrait() and landscape() mixins
+@mixin or($class) {
+  @if $class == po {
+    @media (orientation: portrait) {
+      @content;
+    }
+  } @else if $class == ld {
+    @media (orientation: landscape) {
+      @content;
+    }
+  } @else {
+    @warn "Orientation mixin supports: po, ld";
+  }
+}
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+// 100% background image
+@mixin background($img-url) {
+  background: url($img-url);
+  background-size: 100% 100%;
+}
+
+// Color mixin generating .color-text, .color-hover, .color-bg, color-bg-hover
+@mixin colorSet($colorName) {
+  .#{$colorName}:hover, .#{$colorName}:hover span:before {
+    color: map-get($colors, $colorName#{-hover});
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .#{$colorName}:focus, .#{$colorName}:focus span:before {
+    color: map-get($colors, $colorName#{-hover});
+    text-decoration: none;
+  }
+  .#{$colorName}-bg {
+    background-color: map-get($colors, $colorName);
+  }
+  .#{$colorName}-text {
+    color: map-get($colors, $colorName);
+  }
+  .#{$colorName}-bg-hover:hover {
+    color: map-get($colors, $colorName#{-hover});
+  }
+}
+
+@mixin font-style($font-list) {
+  @each $font-name in $font-list {
+    .#{$font-name} {
+      font-family:  capitalize(str-replace($font-name, '-', $replace: ""));
+    }
+  }
+}
+
+// Image sets mixin
+@mixin imageSet($imageSet, $fileType) {
+  @if $fileType == 'png' {
+    @each $png-image in $imageSet {
+      .#{$png-image} {
+        @include background('/Assets/png/#{$png-image}.png');
+      }
+    }
+  } @else if $fileType == 'jpg' {
+    @each $jpg-image in $imageSet {
+      .#{$jpg-image} {
+        @include background('/Assets/png/#{$jpg-image}.jpg');
+      }
+    }
+  }
+}
+
+// Breakpoints Spread functions
+@function get_bp($label) {
+  @return map-get($breakpoints, $label);
+}
+
+@function round-num($num) {
+  @return round($num*100)/100;
+}
+
+@mixin bp($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @warn "Invalid breakpoint `#{$name}`.";
+  } @else {
+    @if map-get($breakpoints, $name) {
+      @media (min-width: map-get($breakpoints, $name)) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+// Breakpoints Spread mixin
+// @TODO add shorthand css
+// @TODO add possibilities of percentage values
+// @TODO Merge multiple queries into one
+@mixin spread-value($property, $value-start, $value-end, $bp-start: xs, $bp-end: xl) {
+  @if type-of($value-start) != number or type-of($value-end) != number {
+    @warn "Either $value-start or $value-end is not a number: `#{$value-start}` | `#{$value-end}`"
+  } @else {
+    #{$property}: #{$value-start};
+    $value-distance: $value-end - $value-start;
+    $bp-distance: get_bp($bp-end) - get_bp($bp-start);
+    $bp-keys: map-keys($breakpoints);
+    $bp-list: ();
+
+    $i: index($bp-keys, $bp-start);
+    @while $i <= length($bp-keys) and nth($bp-keys, $i) != $bp-end {
+      $i: $i + 1;
+      $bp-list: join($bp-list, nth($bp-keys, $i));
+    }
+
+    @each $key in $bp-list {
+      $percentage: ( get-bp($key) - get_bp($bp-start) ) / $bp-distance;
+      @include bp($key) {
+        #{$property}: round-num(( $value-distance * $percentage ) + $value-start);
+      }
+    }
+  }
+}
+
+//Font Face
+
+
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+          eot: "?#iefix",
+          svg: "#" + str-replace($name, " ", "")
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}

@@ -1,0 +1,48 @@
+/*
+@include font-face($quicksand-bold, fonts/QuicksandBold, 700, bold);
+@include font-face($quicksand-light, fonts/QuicksandLight, 500, normal);
+@include font-face($hijrnotes, fonts/Hijrnotes, 500, normal);
+*/
+
+@font-face {
+  font-family: 'QuicksandLight-Regular';
+  src: url("fonts/QuicksandLight-Regular.otf") format("opentype");
+  src: url('fonts/QuicksandLight-Regular.eot');
+  src: url('fonts/QuicksandLight-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/QuicksandLight-Regular.woff2') format('woff2'),
+  url('fonts/QuicksandLight-Regular.woff') format('woff'),
+  url('fonts/QuicksandLight-Regular.ttf') format('truetype'),
+  url('fonts/QuicksandLight-Regular.svg#QuicksandLight-Regular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuicksandBold-Regular';
+  src: url("fonts/QuicksandBold-Regular.otf") format("opentype");
+  src: url('fonts/QuicksandBold-Regular.eot');
+  src: url('fonts/QuicksandBold-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/QuicksandBold-Regular.woff2') format('woff2'),
+  url('fonts/QuicksandBold-Regular.woff') format('woff'),
+  url('fonts/QuicksandBold-Regular.ttf') format('truetype'),
+  url('fonts/QuicksandBold-Regular.svg#QuicksandBold-Regular') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HijrnotesPERSONALUSEONLY';
+  src: url("fonts/HijrnotesPERSONALUSEONLY.otf") format("opentype");
+  src: url('fonts/HijrnotesPERSONALUSEONLY.eot');
+  src: url('fonts/HijrnotesPERSONALUSEONLY.eot?#iefix') format('embedded-opentype'),
+  url('fonts/HijrnotesPERSONALUSEONLY.woff2') format('woff2'),
+  url('fonts/HijrnotesPERSONALUSEONLY.woff') format('woff'),
+  url('fonts/HijrnotesPERSONALUSEONLY.ttf') format('truetype'),
+  url('fonts/HijrnotesPERSONALUSEONLY.svg#HijrnotesPERSONALUSEONLY') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@include font-style($font-list);
+*/

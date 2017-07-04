@@ -1,0 +1,10 @@
+.inherit-text-colour {
+  color: inherit;
+}
+
+@include colorSet(black);
+@include colorSet(white);
+@include colorSet(grey);
+@include colorSet(opaque);
+@include colorSet(blue);
+@include colorSet(red);
