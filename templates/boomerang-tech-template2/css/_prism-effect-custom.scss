@@ -1,0 +1,151 @@
+/* Article Layout */
+.wrapper {
+    width: 100%;
+    background: white;
+}
+
+.wrapper:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.wrapper .copy {
+    width: 40%;
+    float: left;
+    position: relative;
+}
+
+.demo-2 .wrapper .copy {
+    float: right;
+}
+
+.wrapper .copy:before {
+    width: 0;
+    height: 0;
+    float: left;
+    padding-bottom: 119%;
+    content: '';
+}
+
+.wrapper .copy article {
+    margin: auto;
+    padding: 4vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.wrapper .copy h2 {
+    margin: 0;
+    font-size: 3em;
+    font-size: 4vw;
+}
+
+.wrapper .copy p:first-of-type {
+    color: #b1b6ba;
+    font-size: 1.5em;
+    font-size: 2vw;
+    margin-bottom: 1.5em;
+}
+
+.wrapper .prism-slider {
+    width: 60%;
+    float: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.demo-2 .wrapper .prism-slider {
+    float: left;
+}
+
+/* PrismSlider */
+.cache {
+    display: none;
+}
+
+.prism-slider {
+    width: 1200px;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 48%;
+    position: relative;
+}
+
+.prism-slider canvas {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navigation {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    list-style: none;
+    z-index: 1;
+}
+
+.navigation li {
+    border: 3px solid #eceff1;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    background: #52525a;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navigation .active {
+    background: #eceff1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .wrapper:after {
+        display: none;
+    }
+
+    .wrapper .copy, .wrapper .prism-slider {
+        width: 100%;
+        float: none;
+    }
+
+    .wrapper .copy:before {
+        display: none;
+    }
+
+    .wrapper .copy article {
+        position: relative;
+        padding: 50px;
+        display: block;
+    }
+
+    .wrapper .copy h2 {
+        font-size: 8vw;
+    }
+
+    .wrapper .copy p:first-of-type {
+        font-size: 4vw;
+    }
+
+    .wrapper .prism-slider {
+        padding-bottom: 80%;
+    }
+
+    .navigation li {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+

@@ -1,0 +1,1178 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Westhorpe House</title>
+        <meta name="description" content="Inspiration for on scroll header animations with various effects"/>
+        <meta name="keywords" content="on scroll, animate, header, transition, css3, 3d, effect, inspiration"/>
+        <meta name="author" content="Codrops"/>
+        <link rel="shortcut icon" href="../favicon.ico">
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/vendor/flickity.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+        <!-- Modernizr JS-->
+        <script src="js/modernizr.custom.js"></script>
+
+
+    </head>
+    <body>
+        <div class="demo-1">
+            <div id="container" class="container intro-effect-push">
+                <!-- Top Navigation -->
+                <div class="codrops-top clearfix">
+                </div>
+                <header class="header">
+                    <div class="bg-img">
+                        <video autoplay loop muted>
+                            <source src="video/WesthorpeHouse.mp4" type="video/mp4">
+                            <!-- <source src="../../assets/ocean.webm" type="video/webm"> -->
+                        </video>
+                    </div>
+                    <div class="title">
+                        <h1>Westhorpe House</h1>
+                    </div>
+                </header>
+                <button class="trigger" data-info=""><span>Trigger</span></button>
+                <div class="title">
+                    <h1>Welcome</h1>
+
+                    <p class="subline">Westhorpe House</p>
+
+                    <p>by <strong>Henry James</strong> &#8212; Posted in <strong>Inspiration</strong> on <strong>May 21,
+                        2014</strong></p>
+                </div>
+                <article class="content">
+                    <div>
+                        <p>We may define a food to be any substance which will repair the functional waste of the body, increase
+                            its growth, or maintain the heat, muscular, and nervous energy. </p>
+
+                        <p>In its most comprehensive sense, the oxygen of the air is a food; as although it is admitted by the
+                            lungs, it passes into the blood, and there re-acts upon the other food which has passed through the
+                            stomach. It is usual, however, to restrict the term food to such nutriment as enters the body by the
+                            intestinal canal. Water is often spoken of as being distinct from food, but for this there is no
+                            sufficient reason.</p>
+
+                        <p>Many popular writers have divided foods into flesh-formers, heat-givers, and bone-formers. Although
+                            attractive from its simplicity, this classification will not bear criticism. Flesh-formers are also
+                            heat-givers. Only a portion of the mineral matter goes to form bone.</p>
+
+                        <p>These last are not strictly foods, if we keep to the definition already given; but they are consumed
+                            with the true foods or nutrients, comprised in the other two classes, and cannot well be excluded
+                            from consideration.</p>
+
+                        <blockquote>A comparatively small quantity of proteid matter, such as is easily obtained from vegetable
+                            food, is ample for the general needs of the body.
+                        </blockquote>
+                        <p>Flesh contains no starch or sugar, but a small quantity of glycogen. The fat in an animal is derived
+                            from the carbohydrates, the fats and the proteids of the vegetables consumed. The soil that produced
+                            the herbage, grain and roots consumed by cattle, in most cases could have produced food capable of
+                            direct utilisation by man. By passing the product of the soil through animals there is an enormous
+                            economic loss, as the greater part of that food is dissipated in maintaining the life and growth;
+                            little remains as flesh when the animal is delivered into the hands of the butcher. Some imagine
+                            that flesh food is more easily converted into flesh and blood in our bodies and is consequently more
+                            valuable than similar constituents in vegetables, but such is not the case. Fat, whether from flesh
+                            or from vegetables is digested in the same manner. The proteids of flesh, like those of vegetables,
+                            are converted into peptone by the digestive juices—taking the form of a perfectly diffusible
+                            liquid—otherwise they could not be absorbed and utilised by the body. Thus the products of digestion
+                            of both animal and vegetable proteids and fats are the same. Formerly, proteid matter was looked
+                            upon as the most valuable part of the food, and a large proportion was thought necessary for hard
+                            work. It was thought to be required, not only for the construction of the muscle substance, but to
+                            be utilised in proportion to muscular exertion. These views are now known to be wrong. A
+                            comparatively small quantity of proteid matter, such as is easily obtained from vegetable food, is
+                            ample for the general needs of the body. Increased muscular exertion requires but a slight increase
+                            of this food constituent. It is the carbohydrates, or carbohydrates and fats that should be eaten in
+                            larger quantity, as these are the main source of muscular energy. The fact that animals, capable of
+                            the most prolonged and powerful exertion, thrive on vegetables of comparatively low proteid value,
+                            and that millions of the strongest races have subsisted on what most Englishmen would consider a
+                            meagre vegetarian diet, should have been sufficient evidence against the earlier view.</p>
+                    </div>
+                </article>
+            </div>
+            <!-- /container -->
+        </div>
+
+        <div class="container">
+            <!-- the header that will be animated by adding the respective state class to it -->
+            <header id="ha-header" class="ha-header ha-header-large">
+                <div class="ha-header-perspective">
+                    <div class="ha-header-front">
+                        <h1><span>Westhorpe House</span></h1>
+                        <nav>
+                            <a href="view-homes.html">Homes</a>
+                            <a href="locations.html">Location</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="help-to-move.html">Help To Move</a>
+                            <a href="contact-us.html">Contact</a>
+                        </nav>
+                    </div>
+                    <div class="ha-header-bottom">
+                        <nav>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="ha-waypoint" data-animate-down="ha-header-color" data-animate-up="ha-header-large">
+                <p>At the present time, eminent breeders try by methodical selection, with a distinct object in view, to make a
+                    new strain or sub-breed, superior to anything of the kind in the country. But, for our purpose, a form of
+                    selection, which may be called unconscious, and which results from every one trying to possess and breed
+                    from the best individual animals, is more important. Thus, a man who intends keeping pointers naturally
+                    tries to get as good dogs as he can, and afterwards breeds from his own best dogs, but he has no wish or
+                    expectation of permanently altering the breed. Nevertheless we may infer that this process, continued during
+                    centuries, would improve and modify any breed, in the same way as Bakewell, Collins, etc., by this very same
+                    process, only carried on more methodically, did greatly modify, even during their lifetimes, the forms and
+                    qualities of their cattle. Slow and insensible changes of this kind could never be recognised unless actual
+                    measurements or careful drawings of the breeds in question have been made long ago, which may serve for
+                    comparison. In some cases, however, unchanged, or but little changed, individuals of the same breed exist in
+                    less civilised districts, where the breed has been less improved. There is reason to believe that King
+                    Charles' spaniel has been unconsciously modified to a large extent since the time of that monarch. Some
+                    highly competent authorities are convinced that the setter is directly derived from the spaniel, and has
+                    probably been slowly altered from it. It is known that the English pointer has been greatly changed within
+                    the last century, and in this case the change has, it is believed, been chiefly effected by crosses with the
+                    foxhound; but what concerns us is, that the change has been effected unconsciously and gradually, and yet so
+                    effectually that, though the old Spanish pointer certainly came from Spain, Mr. Borrow has not seen, as I am
+                    informed by him, any native dog in Spain like our pointer.</p>
+
+                <p>By a similar process of selection, and by careful training, English race-horses have come to surpass in
+                    fleetness and size the parent Arabs, so that the latter, by the regulations for the Goodwood Races, are
+                    favoured in the weights which they carry. Lord Spencer and others have shown how the cattle of England have
+                    increased in weight and in early maturity, compared with the stock formerly kept in this country. By
+                    comparing the accounts given in various old treatises of the former and present state of carrier and tumbler
+                    pigeons in Britain, India, and Persia, we can trace the stages through which they have insensibly passed,
+                    and come to differ so greatly from the rock-pigeon.</p>
+
+                <p>Youatt gives an excellent illustration of the effects of a course of selection which may be considered as
+                    unconscious, in so far that the breeders could never have expected, or even wished, to produce the result
+                    which ensued—namely, the production of the distinct strains. The two flocks of Leicester sheep kept by Mr.
+                    Buckley and Mr. Burgess, as Mr. Youatt remarks, "Have been purely bred from the original stock of Mr.
+                    Bakewell for upwards of fifty years. There is not a suspicion existing in the mind of any one at all
+                    acquainted with the subject that the owner of either of them has deviated in any one instance from the pure
+                    blood of Mr. Bakewell's flock, and yet the difference between the sheep possessed by these two gentlemen is
+                    so great that they have the appearance of being quite different varieties."</p>
+
+                <p>If there exist savages so barbarous as never to think of the inherited character of the offspring of their
+                    domestic animals, yet any one animal particularly useful to them, for any special purpose, would be
+                    carefully preserved during famines and other accidents, to which savages are so liable, and such choice
+                    animals would thus generally leave more offspring than the inferior ones; so that in this case there would
+                    be a kind of unconscious selection going on. We see the value set on animals even by the barbarians of
+                    Tierra del Fuego, by their killing and devouring their old women, in times of dearth, as of less value than
+                    their dogs.</p>
+            </section>
+        </div>
+        <!-- /container -->
+
+
+        <div class="container">
+            <!-- Top Navigation -->
+            <div class="content">
+                <h2>Lily</h2>
+
+                <div class="grid">
+                    <figure class="effect-lily">
+                        <img src="img/12.jpg" alt="img12"/>
+                        <figcaption>
+                            <div>
+                                <h2>Nice <span>Lily</span></h2>
+
+                                <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-lily">
+                        <img src="img/1.jpg" alt="img1"/>
+                        <figcaption>
+                            <div>
+                                <h2>Nice <span>Lily</span></h2>
+
+                                <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Sadie</h2>
+
+                <div class="grid">
+                    <figure class="effect-sadie">
+                        <img src="img/2.jpg" alt="img02"/>
+                        <figcaption>
+                            <h2>Holy <span>Sadie</span></h2>
+
+                            <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-sadie">
+                        <img src="img/14.jpg" alt="img14"/>
+                        <figcaption>
+                            <h2>Holy <span>Sadie</span></h2>
+
+                            <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Honey</h2>
+
+                <div class="grid">
+                    <figure class="effect-honey">
+                        <img src="img/4.jpg" alt="img04"/>
+                        <figcaption>
+                            <h2>Dreamy <span>Honey</span> <i>Now</i></h2>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/5.jpg" alt="img05"/>
+                        <figcaption>
+                            <h2>Dreamy <span>Honey</span> <i>Now</i></h2>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Layla</h2>
+
+                <div class="grid">
+                    <figure class="effect-layla">
+                        <img src="img/6.jpg" alt="img06"/>
+                        <figcaption>
+                            <h2>Crazy <span>Layla</span></h2>
+
+                            <p>When Layla appears, she brings an eternal summer along.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-layla">
+                        <img src="img/3.jpg" alt="img03"/>
+                        <figcaption>
+                            <h2>Crazy <span>Layla</span></h2>
+
+                            <p>When Layla appears, she brings an eternal summer along.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Zoe</h2>
+
+                <div class="grid">
+                    <figure class="effect-zoe">
+                        <img src="img/25.jpg" alt="img25"/>
+                        <figcaption>
+                            <h2>Creative <span>Zoe</span></h2>
+
+                            <p class="icon-links">
+                                <a href="#"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear
+                                in his face.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-zoe">
+                        <img src="img/26.jpg" alt="img26"/>
+                        <figcaption>
+                            <h2>Creative <span>Zoe</span></h2>
+
+                            <p class="icon-links">
+                                <a href="#"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear
+                                in his face.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Oscar</h2>
+
+                <div class="grid">
+                    <figure class="effect-oscar">
+                        <img src="img/9.jpg" alt="img09"/>
+                        <figcaption>
+                            <h2>Warm <span>Oscar</span></h2>
+
+                            <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-oscar">
+                        <img src="img/10.jpg" alt="img10"/>
+                        <figcaption>
+                            <h2>Warm <span>Oscar</span></h2>
+
+                            <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Marley</h2>
+
+                <div class="grid">
+                    <figure class="effect-marley">
+                        <img src="img/11.jpg" alt="img11"/>
+                        <figcaption>
+                            <h2>Sweet <span>Marley</span></h2>
+
+                            <p>Marley tried to convince her but she was not interested.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-marley">
+                        <img src="img/12.jpg" alt="img12"/>
+                        <figcaption>
+                            <h2>Sweet <span>Marley</span></h2>
+
+                            <p>Marley tried to convince her but she was not interested.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Ruby</h2>
+
+                <div class="grid">
+                    <figure class="effect-ruby">
+                        <img src="img/13.jpg" alt="img13"/>
+                        <figcaption>
+                            <h2>Glowing <span>Ruby</span></h2>
+
+                            <p>Ruby did not need any help. Everybody knew that.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-ruby">
+                        <img src="img/14.jpg" alt="img14"/>
+                        <figcaption>
+                            <h2>Glowing <span>Ruby</span></h2>
+
+                            <p>Ruby did not need any help. Everybody knew that.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Roxy</h2>
+
+                <div class="grid">
+                    <figure class="effect-roxy">
+                        <img src="img/15.jpg" alt="img15"/>
+                        <figcaption>
+                            <h2>Charming <span>Roxy</span></h2>
+
+                            <p>Roxy was my best friend. She'd cross any border for me.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-roxy">
+                        <img src="img/1.jpg" alt="img01"/>
+                        <figcaption>
+                            <h2>Charming <span>Roxy</span></h2>
+
+                            <p>Roxy was my best friend. She'd cross any border for me.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Bubba</h2>
+
+                <div class="grid">
+                    <figure class="effect-bubba">
+                        <img src="img/2.jpg" alt="img02"/>
+                        <figcaption>
+                            <h2>Fresh <span>Bubba</span></h2>
+
+                            <p>Bubba likes to appear out of thin air.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-bubba">
+                        <img src="img/16.jpg" alt="img16"/>
+                        <figcaption>
+                            <h2>Fresh <span>Bubba</span></h2>
+
+                            <p>Bubba likes to appear out of thin air.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Romeo</h2>
+
+                <div class="grid">
+                    <figure class="effect-romeo">
+                        <img src="img/17.jpg" alt="img17"/>
+                        <figcaption>
+                            <h2>Wild <span>Romeo</span></h2>
+
+                            <p>Romeo never knows what he wants. He seemed to be very cross about something.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-romeo">
+                        <img src="img/18.jpg" alt="img18"/>
+                        <figcaption>
+                            <h2>Wild <span>Romeo</span></h2>
+
+                            <p>Romeo never knows what he wants. He seemed to be very cross about something.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Dexter</h2>
+
+                <div class="grid">
+                    <figure class="effect-dexter">
+                        <img src="img/19.jpg" alt="img19"/>
+                        <figcaption>
+                            <h2>Strange <span>Dexter</span></h2>
+
+                            <p>Dexter had his own strange way. You could watch him training ants.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-dexter">
+                        <img src="img/12.jpg" alt="img12"/>
+                        <figcaption>
+                            <h2>Strange <span>Dexter</span></h2>
+
+                            <p>Dexter had his own strange way. You could watch him training ants.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Sarah</h2>
+
+                <div class="grid">
+                    <figure class="effect-sarah">
+                        <img src="img/13.jpg" alt="img13"/>
+                        <figcaption>
+                            <h2>Free <span>Sarah</span></h2>
+
+                            <p>Sarah likes to watch clouds. She's quite depressed.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-sarah">
+                        <img src="img/20.jpg" alt="img20"/>
+                        <figcaption>
+                            <h2>Free <span>Sarah</span></h2>
+
+                            <p>Sarah likes to watch clouds. She's quite depressed.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Chico</h2>
+
+                <div class="grid">
+                    <figure class="effect-chico">
+                        <img src="img/15.jpg" alt="img15"/>
+                        <figcaption>
+                            <h2>Silly <span>Chico</span></h2>
+
+                            <p>Chico's main fear was missing the morning bus.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-chico">
+                        <img src="img/4.jpg" alt="img04"/>
+                        <figcaption>
+                            <h2>Silly <span>Chico</span></h2>
+
+                            <p>Chico's main fear was missing the morning bus.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Milo</h2>
+
+                <div class="grid">
+                    <figure class="effect-milo">
+                        <img src="img/11.jpg" alt="img11"/>
+                        <figcaption>
+                            <h2>Faithful <span>Milo</span></h2>
+
+                            <p>Milo went to the woods. He took a fun ride and never came back.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-milo">
+                        <img src="img/3.jpg" alt="img03"/>
+                        <figcaption>
+                            <h2>Faithful <span>Milo</span></h2>
+
+                            <p>Milo went to the woods. He took a fun ride and never came back.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Julia</h2>
+
+                <div class="grid">
+                    <figure class="effect-julia">
+                        <img src="img/21.jpg" alt="img21"/>
+                        <figcaption>
+                            <h2>Passionate <span>Julia</span></h2>
+
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+
+                                <p>She loves the smell of the ocean</p>
+
+                                <p>And dives into the morning light</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia">
+                        <img src="img/22.jpg" alt="img22"/>
+                        <figcaption>
+                            <h2>Passionate <span>Julia</span></h2>
+
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+
+                                <p>She loves the smell of the ocean</p>
+
+                                <p>And dives into the morning light</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Goliath</h2>
+
+                <div class="grid">
+                    <figure class="effect-goliath">
+                        <img src="img/23.jpg" alt="img23"/>
+                        <figcaption>
+                            <h2>Thoughtful <span>Goliath</span></h2>
+
+                            <p>When Goliath comes out, you should run.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-goliath">
+                        <img src="img/24.jpg" alt="img24"/>
+                        <figcaption>
+                            <h2>Thoughtful <span>Goliath</span></h2>
+
+                            <p>When Goliath comes out, you should run.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Hera</h2>
+
+                <div class="grid">
+                    <figure class="effect-hera">
+                        <img src="img/17.jpg" alt="img17"/>
+                        <figcaption>
+                            <h2>Tender <span>Hera</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-file-image-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-file-archive-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-file-code-o"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-hera">
+                        <img src="img/25.jpg" alt="img25"/>
+                        <figcaption>
+                            <h2>Tender <span>Hera</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-file-image-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-file-archive-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-file-code-o"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Winston</h2>
+
+                <div class="grid">
+                    <figure class="effect-winston">
+                        <img src="img/30.jpg" alt="img30"/>
+                        <figcaption>
+                            <h2>Jolly <span>Winston</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-winston">
+                        <img src="img/1.jpg" alt="img01"/>
+                        <figcaption>
+                            <h2>Jolly <span>Winston</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Selena</h2>
+
+                <div class="grid">
+                    <figure class="effect-selena">
+                        <img src="img/10.jpg" alt="img10"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-selena">
+                        <img src="img/31.jpg" alt="img31"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Terry</h2>
+
+                <div class="grid">
+                    <figure class="effect-terry">
+                        <img src="img/16.jpg" alt="img16"/>
+                        <figcaption>
+                            <h2>Noisy <span>Terry</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-download"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-share"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-terry">
+                        <img src="img/26.jpg" alt="img26"/>
+                        <figcaption>
+                            <h2>Noisy <span>Terry</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-download"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-share"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Phoebe</h2>
+
+                <div class="grid">
+                    <figure class="effect-phoebe">
+                        <img src="img/3.jpg" alt="img03"/>
+                        <figcaption>
+                            <h2>Plain <span>Phoebe</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-user"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-cog"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-phoebe">
+                        <img src="img/7.jpg" alt="img07"/>
+                        <figcaption>
+                            <h2>Plain <span>Phoebe</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-user"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-cog"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Apollo</h2>
+
+                <div class="grid">
+                    <figure class="effect-apollo">
+                        <img src="img/18.jpg" alt="img18"/>
+                        <figcaption>
+                            <h2>Strong <span>Apollo</span></h2>
+
+                            <p>Apollo's last game of pool was so strange.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-apollo">
+                        <img src="img/22.jpg" alt="img22"/>
+                        <figcaption>
+                            <h2>Strong <span>Apollo</span></h2>
+
+                            <p>Apollo's last game of pool was so strange.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Kira</h2>
+
+                <div class="grid">
+                    <figure class="effect-kira">
+                        <img src="img/17.jpg" alt="img17"/>
+                        <figcaption>
+                            <h2>Dark <span>Kira</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-home"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-download"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-share"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-kira">
+                        <img src="img/5.jpg" alt="img05"/>
+                        <figcaption>
+                            <h2>Dark <span>Kira</span></h2>
+
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-home"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-download"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-share"></i></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Steve</h2>
+
+                <div class="grid">
+                    <figure class="effect-steve">
+                        <img src="img/29.jpg" alt="img29"/>
+                        <figcaption>
+                            <h2>Lonely <span>Steve</span></h2>
+
+                            <p>Steve was afraid of the Boogieman.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-steve">
+                        <img src="img/33.jpg" alt="img33"/>
+                        <figcaption>
+                            <h2>Lonely <span>Steve</span></h2>
+
+                            <p>Steve was afraid of the Boogieman.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Moses</h2>
+
+                <div class="grid">
+                    <figure class="effect-moses">
+                        <img src="img/24.jpg" alt="img24"/>
+                        <figcaption>
+                            <h2>Cute <span>Moses</span></h2>
+
+                            <p>Moses loves to run after butterflies.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-moses">
+                        <img src="img/20.jpg" alt="img20"/>
+                        <figcaption>
+                            <h2>Cute <span>Moses</span></h2>
+
+                            <p>Moses loves to run after butterflies.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Jazz</h2>
+
+                <div class="grid">
+                    <figure class="effect-jazz">
+                        <img src="img/25.jpg" alt="img25"/>
+                        <figcaption>
+                            <h2>Dynamic <span>Jazz</span></h2>
+
+                            <p>When Jazz starts to chase cars, the whole world stands still.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-jazz">
+                        <img src="img/6.jpg" alt="img06"/>
+                        <figcaption>
+                            <h2>Dynamic <span>Jazz</span></h2>
+
+                            <p>When Jazz starts to chase cars, the whole world stands still.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Ming</h2>
+
+                <div class="grid">
+                    <figure class="effect-ming">
+                        <img src="img/9.jpg" alt="img09"/>
+                        <figcaption>
+                            <h2>Funny <span>Ming</span></h2>
+
+                            <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-ming">
+                        <img src="img/8.jpg" alt="img08"/>
+                        <figcaption>
+                            <h2>Funny <span>Ming</span></h2>
+
+                            <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Lexi</h2>
+
+                <div class="grid">
+                    <figure class="effect-lexi">
+                        <img src="img/12.jpg" alt="img12"/>
+                        <figcaption>
+                            <h2>Altruistic <span>Lexi</span></h2>
+
+                            <p>Each and every friend is special. Lexi won't hide a single cookie.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-lexi">
+                        <img src="img/3.jpg" alt="img03"/>
+                        <figcaption>
+                            <h2>Altruistic <span>Lexi</span></h2>
+
+                            <p>Each and every friend is special. Lexi won't hide a single cookie.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h2>Duke</h2>
+
+                <div class="grid">
+                    <figure class="effect-duke">
+                        <img src="img/27.jpg" alt="img27"/>
+                        <figcaption>
+                            <h2>Messy <span>Duke</span></h2>
+
+                            <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-duke">
+                        <img src="img/17.jpg" alt="img17"/>
+                        <figcaption>
+                            <h2>Messy <span>Duke</span></h2>
+
+                            <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+        <script>
+            // For Demo purposes only (show hover effect on mobile devices)
+            [].slice.call(document.querySelectorAll('a[href="#"')).forEach(function (el) {
+                el.addEventListener('click', function (ev) {
+                    ev.preventDefault();
+                });
+            });
+        </script>
+
+        <div class="container m-t-md cards-container">
+            <!-- First row -->
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <!-- Card -->
+                    <article class="card animated fadeInLeft">
+                        <img class="card-img-top img-responsive" src="img/card5.jpg" alt=""/>
+
+                        <div class="card-block">
+                            <h4 class="card-title">Animal Farm</h4>
+                            <h6 class="text-muted">George Orwell</h6>
+
+                            <p class="card-text">Tired of their servitude to man, a group of farm animals revolt and establish
+                                their own society, only to be betrayed into worse servitude by their leaders, the pigs. This
+                                satire addresses the communist philosophy the Soviet Union.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </article>
+                    <!-- .end Card -->
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <!-- Card -->
+                    <article class="card animated fadeInUp">
+                        <div class="card-block">
+                            <h4 class="card-title">Life After Life</h4>
+                            <h6 class="text-muted">Kate Atkinson</h6>
+                        </div>
+                        <img class="img-responsive" src="img/card2.jpg" alt="Leaf on the street"/>
+
+                        <div class="card-block">
+                            <p class="card-text">On a cold and snowy night, Ursula Todd is born, the 3rd child of a wealthy
+                                banker and his wife. She dies before she can draw her first breath. On that same cold and snowy
+                                night, lets out a lusty wail.</p>
+                        </div>
+                        <div class="card-block text-center">
+                            <div class="btn-group hidden-sm-down hidden-md-down" role="group" aria-label="Card buttons">
+                                <a href="#" class="btn btn-primary">Read more</a>
+                                <a href="#" class="btn btn-primary">Save for later</a>
+                            </div>
+                            <div class="btn-group-vertical hidden-lg-up" role="group" aria-label="Card buttons">
+                                <a href="#" class="btn btn-primary">Read more</a>
+                                <a href="#" class="btn btn-primary">Save for later</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- .end Card -->
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <!-- Card -->
+                    <article class="card animated fadeInRight">
+                        <div class="card-block">
+                            <h4 class="card-title">Wind, Sand and Stars</h4>
+                            <h6 class="text-muted">Antoine de Saint-Exupéry</h6>
+
+                            <p class="card-text">Story that captures the grandeur, danger, and isolation of flight. Its exciting
+                                account of air adventure, combined with lyrical prose and the spirit of a philosopher, makes it
+                                one of the most popular works ever written.</p>
+                        </div>
+                        <div class="card-block text-center">
+                            <div class="btn-group hidden-sm-down hidden-md-down" role="group" aria-label="Card buttons">
+                                <a href="#" class="card-link">Read more</a>
+                                <a href="#" class="card-link">Save for later</a>
+                            </div>
+                            <div class="btn-group-vertical hidden-lg-up" role="group" aria-label="Card buttons">
+                                <a href="#" class="card-link">Read more</a><br/>
+                                <a href="#" class="card-link">Save for later</a>
+                            </div>
+                        </div>
+                        <img class="card-img-bottom img-responsive" src="img/card3.jpg" alt="White sand"/>
+                    </article>
+                    <!-- .end Card -->
+                </div>
+            </div>
+            <!-- .end First row -->
+        </div>
+
+        <div class="container">
+            <h1>Flickity - layered parallax, jQuery</h1>
+
+            <div class="parallax">
+                <!-- background parallax layer -->
+                <div class="parallax__layer parallax__layer--bg">
+                    <div class="parallax__layer__cell parallax__layer__cell--bg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--bg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--bg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--bg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--bg"></div>
+                </div>
+                <!-- carousel: midground parallax layer -->
+                <div class="carousel">
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                </div>
+                <!-- foreground parallax layer -->
+                <div class="parallax__layer parallax__layer--fg">
+                    <div class="parallax__layer__cell parallax__layer__cell--fg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--fg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--fg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--fg"></div>
+                    <div class="parallax__layer__cell parallax__layer__cell--fg"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <main>
+                <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+                    <h2>
+                        Range slider
+                    </h2>
+
+                    <div class="range">
+                        <input name="range" type="range" min="0" max="100000">
+
+                        <div class="range-output">
+                            <output class="output" name="output" for="range">
+                                50
+                            </output>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+
+
+        <div class="container">
+            <header class="codrops-header">
+                <h1>Prism Effect Slider</h1>
+
+            </header>
+            <div class="content">
+                <!-- Start Demo -->
+
+                <div class="cache">
+                    <!-- masks -->
+                    <img src="https://tympanus.net/Tutorials/PrismEffectSlider/img/masks/cube-a.svg">
+                    <img src="https://tympanus.net/Tutorials/PrismEffectSlider/img/masks/cube-b.svg">
+                    <img src="https://tympanus.net/Tutorials/PrismEffectSlider/img/masks/cube-c.svg">
+                    <!-- photos -->
+                    <img src="img/prism1.jpg">
+                    <img src="img/prism2.jpg">
+                    <img src="img/prism3.jpg">
+                    <img src="img/prism4.jpg">
+                </div>
+
+                <div class="wrapper">
+                    <div class="prism-slider prism-slider--left">
+                        <ul class="navigation"></ul>
+                    </div>
+                    <div class="copy copy--left">
+                        <article>
+                            <h2>Nature Reveals</h2>
+
+                            <p>
+                                Our physical world, respect and explore,
+                                Where water meets land; a beautiful shore.
+                            </p>
+
+                            <p>
+                                Mountains we conquer, look down in awe,
+                                If you're an artist, make sure you draw.
+                                Nature exciting, adventurously new,
+                                Much more to see, than a sky that is blue.
+                                It offers so much, open your eyes,
+                                Hope of today, with every sunrise.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- End Demo -->
+            </div>
+
+        </div>
+
+
+        <div id="dual-slider-cont" class="container">
+            <div class="row">
+                <div id="dual-slider-inner">
+                    <div id="slider-1">
+                        <ul class="slides">
+                            <li class="gallery-cell">
+                                <img src="img/prism1.jpg">
+                            </li>
+                            <li class="gallery-cell">
+                                <img src="img/prism2.jpg">
+                            </li>
+                            <li class="gallery-cell">
+                                <img src="img/prism3.jpg">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="slider-2">
+                        <ul class="slides">
+                            <li class="gallery-cell">
+                                <img src="img/prism1.jpg">
+                            </li>
+                            <li class="gallery-cell">
+                                <img src="img/prism2.jpg">
+                            </li>
+                            <li class="gallery-cell">
+                                <img src="img/prism13.jpg">
+                            </li>
+                        </ul>
+
+                        <button class="btn-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.3 13.4">
+                                <path id="arrow-line" fill="#231F20" d="M0 5.9h28.7v1H0z"/>
+                                <path fill="#231F20" d="M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7"/>
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /container -->
+
+
+        <!-- Vendor JS files -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/vendor/easing.js"></script>
+        <script src="js/vendor/classie.js"></script>
+
+        <!-- Waypoint -->
+        <script src="js/waypoints.min.js"></script>
+
+        <!-- Prism -->
+        <script src="js/PrismSlider.js"></script>
+        <script src="js/prism-effect-custom.js"></script>
+
+        <!-- Dual Slider -->
+        <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/dual-slider-custom.js"></script>
+
+        <!-- Range Slider -->
+        <script src="js/rangeslider.min.js"></script>
+        <script src="js/range-slider-custom.js"></script>
+
+        <!-- Parallax Carousel -->
+        <script src="js/parallax-carousel-custom.js"></script>
+
+
+        <!-- Video Banner -->
+        <script src="js/video.js"></script>
+        <script src="js/bannerScrollFade.js"></script>
+
+
+        <script>
+            var $head = $('#ha-header');
+            $('.ha-waypoint').each(function (i) {
+                var $el = $(this),
+                        animClassDown = $el.data('animateDown'),
+                        animClassUp = $el.data('animateUp');
+
+                $el.waypoint(function (direction) {
+                    if (direction === 'down' && animClassDown) {
+                        $head.attr('class', 'ha-header ' + animClassDown);
+                    }
+                    else if (direction === 'up' && animClassUp) {
+                        $head.attr('class', 'ha-header ' + animClassUp);
+                    }
+                }, {offset: '100%'});
+            });
+        </script>
+    </body>
+</html>
