@@ -1,0 +1,16 @@
+$orange: #E88333;
+$orange-cont: #740E19;
+$white: #FFFFFF;
+$white-cont: #5E454B;
+$green: #699F8F
+$green-cont: #22534D;
+$mustard: #CBB86C
+$mustard-cont: #5E5023;
+
+Logo fonts
+
+HOGAN
+Nimbus Sans Novus Light
+
+ACADEMY
+Azbuka Std Condensed Black
