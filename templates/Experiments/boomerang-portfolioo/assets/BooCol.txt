@@ -1,0 +1,14 @@
+orange
+#F4970B
+#f6ab3b
+#f8c06c
+
+red
+#D32F2F
+#db5858
+#e48282
+
+yellow
+#FCC101
+#fcd34d
+#fde699
