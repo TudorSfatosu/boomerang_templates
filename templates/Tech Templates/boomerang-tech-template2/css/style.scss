@@ -1,29 +1,40 @@
 @charset "ISO-8859-1";
 
+// Abstracts //
+@import "abstracts/_functions";
+@import "abstracts/_mixins";
+@import "abstracts/_variables";
+
+
+// Base //
+@import "base/_colours";
+@import "base/_helpers";
+
+// Custom //
 /* Hover Effect */
-@import "header-effect";
+@import "components/_header-effect";
 
 /* Prism Effect */
-@import "prism-effect-custom";
+@import "components/_prism-effect-custom";
 
 /* Dual image slider */
-@import  "dual-slider-custom";
+@import "components/_dual-slider-custom";
 
 /* Range slider */
-@import  "range-slider-custom";
+@import "components/_range-slider-custom";
 
 /* Parallax Carousel */
-@import  "parallax-carousel-custom";
+@import "components/_parallax-carousel-custom";
 
 /* Box Shadow Helper */
-@import  "box-shadow-helper";
+@import "components/_box-shadow-helper";
 
 /* Hover Effect */
-@import "hover-effects";
+@import "components/_hover-effects";
 
 /* Video Banner */
-@import "video-banner";
-@import "video-banner-custom";
+@import "components/_video-banner";
+@import "components/_video-banner-custom";
 
 /* Particles */
-@import "westhorpe-particles";
+@import "components/_westhorpe-particles";

@@ -1,0 +1,104 @@
+// Container
+$container-w-xl: 1140px;
+$container-w-lg: 960px;
+$container-w-md: 720px;
+$container-w-sm: 540px;
+
+$h-container-w-xl: $container-w-xl / 2;
+$h-container-w-lg: $container-w-lg / 2;
+$h-container-w-md: $container-w-md / 2;
+$h-container-w-sm: $container-w-sm / 2;
+
+// Variables
+// Restated Bootstrap Variables
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// colors
+$black: #000000;
+$white: #ffffff;
+$white-smoke: #E8E8E8;
+$opaque: #212121;
+
+$greenblue: #248289;
+$lightgrey: #d4d4d8;
+$grey: #939393;
+$darkgrey: #5F5F5F;
+$lightblue: #68C4D6;
+$lightblueRGB: rgba(36, 130, 137, 0.8);
+$blue: #152C54;
+$red: #C1272D;
+$brown: #7F756C;
+$light-brown: #B7ADA5;
+$gold: #FFD700;
+$wh_gold: #D68C47;
+
+$primary: $brown !default;
+$secondary: $red !default;
+
+// colors set array
+// TODO - TOPONDER Is there a way to merge the array with the values?
+$colors: (
+        black: $black,
+        black-hover: $darkgrey,
+        white: $white,
+        white-hover: $darkgrey,
+        opaque: $opaque,
+        opaque-hover: $white,
+        grey: $grey,
+        grey-hover: darken($grey, 3%),
+        red: $red,
+        red-hover: lighten($red, 10%),
+        blue: $blue,
+        blue-hover: lighten($blue, 21%),
+        brown: $brown,
+        brown-hover: $light-brown
+);
+
+//layout breakpoints
+// TODO @Tudor join the array and non-array
+$xs: 767px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1617px;
+
+$breakpoints: (
+        xs: 767px,
+        sm: 768px,
+        md: 992px,
+        lg: 1200px,
+        xl: 1617px
+);
+
+// breakpoints arrays
+$bp-list: "xs" "sm" "md" "lg" "xl";
+$bp-hyphenated-list: null "-xs" "-sm" "-md" "-lg" "-xl";
+// TODO @Tudor - join one-to-five as an associative array with bp-list
+$one-to-five: 1 2 3 4 5;
+
+// breakpoints colors
+$red-xs: #e05252;
+$blue-sm: #5a9bfc;
+$green-md: #57a264;
+$yellow-lg: #d1963d;
+
+// sizes, numbers, numerals and ordinals
+$numerals-px-map: (five: 5px, ten: 10px, fifteen: 15px, twenty: 20px, twenty-five: 25px, thirty: 30px, forty: 40px, fifty: 50px, sixty: 60px, seventy: 70px, eighty: 80px, ninety: 90px, one-hundred: 100px);
+$ordinals-map: (1 st: 1, 2 nd: 2, 3 rd: 3, 4 th: 4, 5 th: 5, 6 th: 6, 7 th: 7, 8 th: 8, 9 th: 9);
+
+// top right bottom left
+$cardinals: "top" "right" "bottom" "left";
+
+// images-array
+$png-image-names: "blog1" "blog2";
