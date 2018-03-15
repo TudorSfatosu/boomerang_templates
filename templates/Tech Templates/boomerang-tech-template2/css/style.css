@@ -1643,7 +1643,7 @@ section:focus {
   box-sizing: border-box; }
 
 body {
-  padding: 240px 0 100%;
+  padding: 0 0 100%;
   font-weight: 400;
   font-family: 'Lato', Arial, sans-serif; }
 
@@ -4690,7 +4690,6 @@ figure.effect-duke:hover p {
   .demo-1 .title p.subline {
     font-size: 1.75em; }
   .demo-1 button.trigger {
-    color: #FFD700;
     position: fixed;
     bottom: 40px;
     left: 50%;
@@ -4734,11 +4733,11 @@ figure.effect-duke:hover p {
     height: 100%; }
   .demo-1 button.trigger span::before {
     position: absolute;
+    color: #D68C47;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
     content: "\e097";
     text-transform: none;
     font-weight: normal;
@@ -5483,6 +5482,27 @@ figure.effect-duke:hover p {
   @media screen and (max-width: 40em) {
     .demo-1 .related {
       font-size: 80%; } }
+
+.logo-overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #021C00;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(6, 42, 2, 0.5) 0%, rgba(17, 105, 9, 0.1) 44%, rgba(17, 105, 9, 0) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(6, 42, 2, 0.5) 0%, rgba(17, 105, 9, 0.1) 44%, rgba(17, 105, 9, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(6, 42, 2, 0.5) 0%, rgba(17, 105, 9, 0.1) 44%, rgba(17, 105, 9, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#062a02', endColorstr='#00116909',GradientType=1 ); }
+
+.title--video-overlay .wh-logo {
+  -webkit-filter: drop-shadow(5px 5px 5px #ffb9003d);
+  filter: drop-shadow(5px 5px 5px #ffb9003d); }
+.title--video-overlay .main-font {
+  text-shadow: 0 0 65px #ffb90014;
+  -webkit-filter: drop-shadow(5px 5px 5px #ffb9003d);
+  filter: drop-shadow(5px 5px 5px #ffb9003d); }
+.title--video-overlay .second-font {
+  text-shadow: 0 0 65px #ffb900; }
 
 /* Particles */
 canvas {

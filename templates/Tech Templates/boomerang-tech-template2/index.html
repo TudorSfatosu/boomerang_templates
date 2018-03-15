@@ -10,6 +10,11 @@
     <meta name="keywords" content="Westhorpe, house, hencan"/>
     <meta name="author" content="Boomerang Creative Agency"/>
 
+    <!-- Typekit -->
+
+    <script src="https://use.typekit.net/bps6ugw.js"></script>
+    <script>try{Typekit.load({ async: false });}catch(e){}</script>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../Assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../Assets/favicon/apple-icon-60x60.png">
@@ -32,10 +37,10 @@
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/vendor/flickity.css"/>
     <link rel="stylesheet" type="text/css" href="../Style/icomoon.css" rel="stylesheet">
-    <link href="../Style/animate.css" rel="stylesheet">
+    <link href="../Assets/vendor/animate/animate.css" rel="stylesheet">
+    <link href="../Assets/vendor/hover/hover.css" rel="stylesheet">
     <link href="../Style/font-awesome.css" rel="stylesheet">
 
     <!-- Main compiled SCSS style -->
@@ -62,19 +67,35 @@
         <div class="codrops-top clearfix">
         </div>
         <header class="header">
-            <div class="bg-img">
+            <div class="bg-img bg-img--video-overlay">
+                <!-- Particles -->
+
+                <!-- Hide IE -->
+                <div class="hide-ie">
+                    <!-- Base Layer -->
+                    <div id="particles-js-b" class="fade-out-1"></div>
+
+                    <!-- Midlle Layer -->
+                    <div id="particles-js-m" class="fade-out-2"></div>
+
+                    <!-- Front Layer -->
+                    <div id="particles-js-f" class="fade-out-3"></div>
+
+                    <!-- BLur Layer -->
+                    <div id="particles-js-f-blur-bright" class="fade-out-4"></div>
+                    <div class="logo-overlay"></div>
+                </div>
+
                 <video autoplay loop muted>
                     <source src="video/WesthorpeHouse.mp4" type="video/mp4">
                     <!-- <source src="../../assets/ocean.webm" type="video/webm"> -->
                 </video>
             </div>
-            <div class="title">
-                <img class="" id="wh-logo" src="img/wh-logo.svg">
-
-                <h1 class="main-font not-selectable shimmer static-neon fadeInUp" data-text="Westhorpe" id="westhorpe">
+            <div class="title title--video-overlay">
+                <img class="animated fadeIn" id="wh-logo" src="img/wh-logo.svg">
+                <h1 class="animated fadeIn main-font not-selectable static-neon " data-text="Westhorpe" id="westhorpe">
                     Westhorpe</h1>
-
-                <h2 class="static-neon second-font not-selectable fadeInUp" data-text="house" id="house">house</h2>
+                <h2 class="static-neon second-font not-selectable animated fadeInUp" data-text="house" id="house">house</h2>
             </div>
         </header>
         <button class="trigger" data-info=""><span>Trigger</span></button>
@@ -1264,14 +1285,7 @@
 <!-- stats.js lib -->
 <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
-<!-- Typekit -->
-<script src="https://use.typekit.net/bps6ugw.js"></script>
-<script>
-    try {
-        Typekit.load({async: true});
-    } catch (e) {
-    }
-</script>
+
 
 </body>
 </html>

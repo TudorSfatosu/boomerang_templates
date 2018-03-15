@@ -39,3 +39,29 @@
   }
 }
 
+.logo-overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #021C00;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(6, 42, 2, 0.5) 0%, rgba(17, 105, 9, 0.1) 44%, rgba(17, 105, 9, 0) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(6, 42, 2, 0.5) 0%, rgba(17, 105, 9, 0.1) 44%, rgba(17, 105, 9, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(6, 42, 2, 0.5) 0%, rgba(17, 105, 9, 0.1) 44%, rgba(17, 105, 9, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#062a02', endColorstr='#00116909',GradientType=1 );
+}
+
+.title--video-overlay {
+  .wh-logo {
+    -webkit-filter: drop-shadow(5px 5px 5px #ffb9003d);
+    filter: drop-shadow(5px 5px 5px #ffb9003d);
+  }
+  .main-font {
+    text-shadow: 0 0 65px #ffb90014;
+    -webkit-filter: drop-shadow(5px 5px 5px #ffb9003d);
+    filter: drop-shadow(5px 5px 5px #ffb9003d);
+  }
+  .second-font {
+    text-shadow: 0 0 65px #ffb900;
+  }
+}

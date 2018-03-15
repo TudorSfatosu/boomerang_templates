@@ -421,3 +421,23 @@ function detectIE() {
     // other browser
     return false;
 }
+
+
+
+
+jQuery(document).ready(function($) {
+    $( ".fade-out-1" ).delay(1000).fadeOut( 1500, function() {
+        // Animation complete.
+    });
+
+    $( ".fade-out-2" ).delay(1200).fadeOut( 1700, function() {
+        // Animation complete.
+    });
+    $( ".fade-out-3" ).delay(1400).fadeOut( 2500, function() {
+        // Animation complete.
+    });
+
+    $( ".fade-out-4" ).delay(1600).fadeOut( 3700, function() {
+        // Animation complete.
+    });
+});

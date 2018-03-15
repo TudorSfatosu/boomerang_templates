@@ -90,7 +90,6 @@
 
   /* Trigger Button */
   button.trigger {
-    color: $gold;
     position: fixed;
     bottom: 40px;
     left: 50%;
@@ -146,11 +145,11 @@
 
   button.trigger span::before {
     position: absolute;
+    color: $wh_gold;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
     content: "\e097";
     text-transform: none;
     font-weight: normal;
