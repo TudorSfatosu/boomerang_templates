@@ -202,17 +202,17 @@
      border-radius: 10px;
 }
  .movie .layer-1 {
-     background-image: url(../img/hover3D/deadpool-bg.png);
+     background-image: url(../img/hover3D/holly-bg.png);
      background-size: cover;
 }
  .movie .layer-2 {
-     background-image: url(../img/hover3D/deadpool.png);
+     background-image: url(../img/hover3D/holly.png);
      background-size: cover;
      -webkit-transform: translateZ(30px);
      transform: translateZ(30px);
 }
  .movie .layer-3 {
-     background-image: url(../img/hover3D/deadpool-title.png);
+     background-image: url(../img/hover3D/holly-title.png);
      background-size: cover;
      -webkit-transform: translateZ(50px);
      transform: translateZ(50px);
