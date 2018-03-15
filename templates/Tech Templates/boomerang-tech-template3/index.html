@@ -45,6 +45,9 @@
     <!-- Icon Hover Custom -->
     <link rel="stylesheet" type="text/css" href="css/icon-hover-custom.css"/>
 
+      <!-- Elastic Progress Custom -->
+    <link rel="stylesheet" type="text/css" href="css/elastic-progress-custom.css"/>
+
     <!-- Modernizr JS-->
     <script src="js/modernizr.custom.js"></script>
 
@@ -354,6 +357,144 @@
             </section>
         </div><!-- /container -->
         <!-- / Icon Hover Effects -->
+
+        <!-- Elastic Progress -->
+        <div class="container">
+        
+            <div class="content">
+                <div class="row">
+                    <div class="box box--centered">
+                        <div role="button" tabindex="0" aria-label="Download" class="Download" data-progressbar-label="Downloading item..."></div> <br>
+                    </div>
+                    <div class="box">
+                        <pre><code>
+element.ElasticProgress({
+    buttonSize: 60,
+    fontFamily: "Montserrat",
+    colorBg: "#adeca8",
+    colorFg: "#7cc576",
+    onClick: function(event) {
+    console.log("onClick");
+    $(this).ElasticProgress("open");
+},
+onOpen: function(event) {
+    fakeLoading($(this));
+},
+onFail: function(event) {
+    $(this).ElasticProgress("open");
+},
+onCancel: function(event) {
+    $(this).ElasticProgress("open");
+}
+});
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box box--centered">
+                        <div role="button" tabindex="0" aria-label="Download" class="Download" data-progressbar-label="Downloading item..."></div> <br>
+                    </div>
+                    <div class="box">
+                        <pre><code>
+element.ElasticProgress({
+    align: "center",
+    fontFamily: "Roboto",
+    colorFg: "#77c2ff",
+    colorBg: "#4e80dd",
+    bleedTop: 110,
+    bleedBottom: 40,
+    buttonSize: 100,
+    labelTilt: 70,
+    arrowDirection: "up",
+    onClick: function() {
+        $(this).ElasticProgress("open");
+    },
+    onOpen: function() {
+        fakeLoading($(this))
+    },
+    onCancel: function() {
+        $(this).ElasticProgress("close");
+    },
+    onComplete: function() {
+        var $obj = $(this)
+        $obj.ElasticProgress("close");
+    }
+});
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box box--centered">
+                        <div role="button" tabindex="0" aria-label="Download" class="Download" data-progressbar-label="Downloading item..."></div> <br>
+                    </div>
+                    <div class="box">
+                        <pre><code>
+element.ElasticProgress({
+    align: "center",
+    colorFg: "#686e85",
+    colorBg: "#b4bad2",
+    highlightColor: "#ffab91",
+    width: Math.min($(window).width()/2 - 100, 600),
+    barHeight: 10,
+    labelHeight: 50,
+    labelWobbliness: 0,
+    bleedTop: 120,
+    bleedRight: 100,
+    buttonSize: 60,
+    fontFamily: "Arvo",
+    barStretch: 0,
+    barInset: 4,
+    barElasticOvershoot: 1,
+    barElasticPeriod: 0.6,
+    textFail: "Download Failed",
+    textComplete: "Download Complete",
+    arrowHangOnFail: false,
+    onClick: function() {
+            $(this).ElasticProgress("open");
+    },
+    onOpen: function() {
+            fakeLoading($(this))
+    },
+    onComplete: function() {
+            var $obj = $(this)
+
+            TweenMax.delayedCall(1.5, function() {
+                    $obj.ElasticProgress("close");
+            })
+    }
+});
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box box--centered">
+                        <div role="button" tabindex="0" aria-label="Download" class="Download" data-progressbar-label="Downloading item..."></div>
+                    </div>
+                    <div class="box">
+                        <pre><code>
+var e = new ElasticProgress(document.querySelectorAll('.Download')[3], {
+    colorFg: "#ed7499",
+    colorBg: "#635c73",
+    highlightColor: "#ed7499",
+    barHeight: 14,
+    barInset: 10,
+    fontFamily: "Indie Flower"
+});
+e.onClick(function() {
+    e.open();
+})
+e.onOpen(function() {
+    fakeLoading(e, 2, 0.5);
+});
+e.onFail(function() {
+    e.close();
+})
+                        </code></pre>
+                </div>
+            </div>
+            
+        </div><!-- /container -->
+        <!-- /Elastic Progress -->
 
         <!-- Special Hover Effects -->
         <div class="container">
@@ -1402,6 +1543,7 @@
 
 <!-- JS files -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 
 <!-- Waypoint -->
 <script src="js/waypoints.min.js"></script>
@@ -1426,6 +1568,10 @@
 <!-- Hover 3D -->
 <script src="js/vendor/jquery.hover3d.js"></script>
 <script src="js/hover3d-custom.js"></script>
+
+<!-- Elastic Progress -->
+<script src="js/vendor/elastic-progress.js"></script>
+<script src="js/elastic-progress-custom.js"></script>
 
 </body>
 </html>
