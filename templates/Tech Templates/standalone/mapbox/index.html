@@ -34,11 +34,27 @@
         padding: 10px;
         font-family: 'Open Sans', sans-serif;
     }
+      #fly {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 50%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        background: #ee8a65;
+    }
 </style>
 
 
 <div id='map'></div>
 <pre id='info'></pre>
+<button id='fly'>Fly</button>
+
 <div id='menu'>
     <input id='basic' type='radio' name='rtoggle' value='basic' >
     <label for='basic'>basic</label>
@@ -53,13 +69,20 @@
     <input id='satellite' type='radio' name='rtoggle' value='satellite' checked='checked'>
     <label for='satellite'>satellite</label>
 </div>
+
+
+
 <script>
+
+
 mapboxgl.accessToken = 'pk.eyJ1IjoidHVkb3JzZmF0b3N1IiwiYSI6ImNpbXltenFmZzAwZ2d2OWx5ZXZ1bnZ5dzkifQ.1p8B_lajUiYKQuTZGQJXQQ';
+var start = [-0.18, 51.47];
+var end = [-0.11, 51.47];
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-v9',
-   center: [-0.18, 51.47], // starting position
-    zoom: 6 // starting zoom
+    center: start,
+    zoom: 6
 });
 
 var layerList = document.getElementById('menu');
@@ -84,7 +107,39 @@ map.on('mousemove', function (e) {
         // e.lngLat is the longitude, latitude geographical position of the event
         JSON.stringify(e.lngLat);
 });
+
+var isAtStart = true;
+
+document.getElementById('fly').addEventListener('click', function() {
+    // depending on whether we're currently at point a or b, aim for
+    // point a or b
+    var target = isAtStart ? end : start;
+
+    // and now we're at the opposite point
+    isAtStart = !isAtStart;
+
+    map.flyTo({
+        // These options control the ending camera position: centered at
+        // the target, at zoom level 9, and north up.
+        center: target,
+        zoom: 9,
+        bearing: 0,
+
+        // These options control the flight curve, making it move
+        // slowly and zoom out almost completely before starting
+        // to pan.
+        speed: 0.2, // make the flying slow
+        curve: 1, // change the speed at which it zooms out
+
+        // This can be any easing function: it takes a number between
+        // 0 and 1 and returns another number between 0 and 1.
+        easing: function (t) {
+            return t;
+        }
+    });
+});
 </script>
 
 </body>
 </html>
+
