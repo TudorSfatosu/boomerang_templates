@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Parallax Example</title>
+    <link href="css/hero-parllax.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container body-content">
+        <!-- Parallax Hero Banner -->
+
+
+        <div id='hero'>
+            <div class='layer-bg layer' data-depth='0.10' data-type='parallax' style='background-image: url("img/00.jpg");'>
+            </div>
+
+
+            <div class='layer-2 layer' data-depth='0.30' data-type='parallax' style='background-image: url("img/01.png"); background-position: center center;'>
+            </div>
+
+
+            <div class="container">
+                <div class='layer-3 layer fade-on-scroll' data-depth='0.60' data-type='parallax' style='background-image: url("img/02.png"); background-position: center center;'>
+                </div>
+
+
+                <div class='layer-4 layer fade-on-scroll' data-depth='0.70' data-type='parallax' style='background-image: url("img/03.png"); background-position: left top;'>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='hero-mobile hero-mobile-horiz' style='background-image: url("img/0mobile_bg.jpg");'>
+        </div>
+
+
+        <div class='hero-mobile hero-mobile-land' style='background-image: url("img/mobile_ld.jpg");'>
+        </div>
+    </div>
+    <script src="js/hero-parllax.js">
+    </script>
+</body>
+</html>
