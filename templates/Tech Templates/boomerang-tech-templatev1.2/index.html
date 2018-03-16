@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Template v3</title>
+    <title>Tech Template v1.1</title>
     <meta name="description" content="Inspiration for on scroll header animations with various effects"/>
     <meta name="keywords" content="on scroll, animate, header, transition, css3, 3d, effect, inspiration"/>
     <meta name="author" content="Codrops"/>
@@ -56,11 +56,15 @@
      <!-- Creative Buttons -->
     <link rel="stylesheet" type="text/css" href="css/creative-buttons-custom.css"/>
 
+    <!-- Hero Parllax -->
+    <link rel="stylesheet" type="text/css" href="css/custom/hero-parllax.css"/>
+
     <!-- Modernizr JS-->
     <script src="js/modernizr.custom.js"></script>
 
 </head>
 <body>
+        <!-- SVg used in the template -->
         <div class="svg-wrap">
             <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
                 <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
@@ -69,9 +73,50 @@
                 <path id="svg_marker" d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571"></path>
             </svg>
         </div>
+
+        <!-- Hero Parallax -->
+         <div id='hero'>
+            <div class='layer-bg layer' data-depth='0.10' data-type='parallax' style='background-image: url("img/hero-parllax/00.jpg");'>
+            </div>
+            <div class='layer-2 layer' data-depth='0.30' data-type='parallax' style='background-image: url("img/hero-parllax/01.png"); background-position: center center;'>
+            </div>
+            <div class="container">
+                <div class='layer-3 layer fade-on-scroll' data-depth='0.60' data-type='parallax' style='background-image: url("img/hero-parllax/02.png"); background-position: center center;'>
+                </div>
+                <div class='layer-4 layer fade-on-scroll' data-depth='0.70' data-type='parallax' style='background-image: url("img/hero-parllax/03.png"); background-position: left top;'>
+                </div>
+            </div>
+        </div>
+
+        <div class='hero-mobile hero-mobile-horiz' style='background-image: url("img/0mobile_bg.jpg");'>
+        </div>
+        <div class='hero-mobile hero-mobile-land' style='background-image: url("img/mobile_ld.jpg");'>
+        </div>
+         <!-- /Hero Parallax -->
+
+        <!-- Hero Parallax - Anti-Parallax Container -->
+        <div class="jumbotron" style="background: white; height: 100%;">
+            <div class="container">
+
+
         <!-- 3D Hover Effects -->
         <div class="container">
                 <div class="site-content">
+                     <div class="demo demo-2">
+                        <div class="columns">
+                            <div class="column">
+                            </div>
+                            <div class="column">
+                                <div class="movie">
+                                    <div class="movie__card">
+                                        <div class="layer-1"></div>
+                                        <div class="layer-2"></div>
+                                        <div class="layer-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="demo demo-1">
                         <div class="project-list">
                             <div class="project">
@@ -116,21 +161,7 @@
                         </div>
 
                     </div>
-                    <div class="demo demo-2">
-                        <div class="columns">
-                            <div class="column">
-                            </div>
-                            <div class="column">
-                                <div class="movie">
-                                    <div class="movie__card">
-                                        <div class="layer-1"></div>
-                                        <div class="layer-2"></div>
-                                        <div class="layer-3"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
         </div>
         <!-- / 3D Hover Effects -->
@@ -1743,7 +1774,7 @@ e.onFail(function() {
     <header id="ha-header" class="ha-header ha-header-large">
         <div class="ha-header-perspective">
             <div class="ha-header-front">
-                <h1><span>Boomerang Tech Template v1.3</span></h1>
+                <h1><span>Boomerang Tech Template v1.1</span></h1>
                 <nav>
                     <a href="view-homes.html">Homes</a>
                     <a href="locations.html">Location</a>
@@ -1900,6 +1931,7 @@ e.onFail(function() {
 </div>
 <!-- /container -->
 
+
 <!-- Vendor files -->
 
 <script src="js/vendor/jquery.js"></script>
@@ -1936,6 +1968,9 @@ e.onFail(function() {
 
 <!-- Creative Buttons -->
 <script src="js/creative-buttons-custom.js"></script>
+
+<!-- Hero Parllax -->
+<script src="js/custom/hero-parllax.js"></script>
 
 </body>
 </html>
