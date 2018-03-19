@@ -1,0 +1,93 @@
+body {
+  background-color: #fff;
+}
+
+img {
+  max-width: 60%;
+  width: 1002px;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation-name: show;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+svg {
+  opacity: 1;
+  max-width: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation-name: hide;
+  animation-delay: 5s;
+  animation-duration: 3s;
+}
+svg path {
+  stroke-width: 1;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: draw;
+  animation-timing-function: linear;
+}
+svg path#back-pgon {
+  stroke: #000;
+  stroke-dasharray: 2810;
+  stroke-dashoffset: 2810;
+  animation-duration: 12s;
+}
+svg path#mid-pgon {
+  stroke: #000;
+  stroke-dasharray: 2810;
+  stroke-dashoffset: 2810;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+svg path#front-pgon {
+  stroke: #000;
+  stroke-dasharray: 2810;
+  stroke-dashoffset: 2810;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+svg path#let-h, svg path#let-o, svg path#let-m, svg path#let-e {
+  stroke: #000;
+  stroke-dasharray: 2810;
+  stroke-dashoffset: 2810;
+  animation-duration: 12s;
+  animation-delay: 4s;
+}
+svg path#let-m2, svg path#let-a, svg path#let-t, svg path#let-c, svg path#let-h2 {
+  stroke: #000;
+  stroke-dasharray: 2810;
+  stroke-dashoffset: 2810;
+  animation-duration: 13s;
+  animation-delay: 5s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
