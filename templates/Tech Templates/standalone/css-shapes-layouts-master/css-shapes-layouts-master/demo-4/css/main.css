@@ -1,0 +1,36 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  position:relative;
+}
+html, body{
+  min-height:100%;
+  background-color: #eee;
+} 
+
+.container{
+  width:556px;
+  height:835px;
+  overflow:hidden;
+  margin:30px auto;
+  color:white;
+  position:relative;
+  font-size:13px;
+  background: url(../images/bread.jpg) top left no-repeat;
+  background-size: 100% 100%;
+  -webkit-shape-inside: polygon(346.67px 291.00px,240.00px 303.24px,144.67px 274.85px,33.33px 272.47px,36.17px 471.47px,111.58px 508.97px,232.98px 557.75px,329.41px 630.60px,401.83px 745.45px,457.68px 813.14px,522.11px 813.24px,520.54px 667.34px,520.39px 487.53px,321.29px 606.81px,128.19px 497.10px,206.79px 433.22px,253.00px 308.47px,372.67px 301.47px,449.00px 259.74px,519.33px 286.00px,519.67px 50.53px,219.33px 49.53px,292.50px 201.26px);
+  shape-inside: polygon(346.67px 291.00px,240.00px 303.24px,144.67px 274.85px,33.33px 272.47px,36.17px 471.47px,111.58px 508.97px,232.98px 557.75px,329.41px 630.60px,401.83px 745.45px,457.68px 813.14px,522.11px 813.24px,520.54px 667.34px,520.39px 487.53px,321.29px 606.81px,128.19px 497.10px,206.79px 433.22px,253.00px 308.47px,372.67px 301.47px,449.00px 259.74px,519.33px 286.00px,519.67px 50.53px,219.33px 49.53px,292.50px 201.26px);
+  /*shape-inside: url(mask.png) top left;*/
+}
+
+.content{
+  color:white;
+  font-size:14px;
+}
+.content h2{
+  font-family: 'Qwigley', cursive;
+  font-size:66px;
+  line-height:1;
+  margin: .5em 0 .1em;
+}

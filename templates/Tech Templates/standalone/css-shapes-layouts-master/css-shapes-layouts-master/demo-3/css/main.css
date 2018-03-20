@@ -1,0 +1,35 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  position:relative;
+}
+html, body{
+  min-height:100%;
+  background-color: lightgray;
+} 
+
+.container{
+  width:445px;
+  height:670px;
+  overflow:hidden;
+  font-family: 'Nunito', sans-serif;
+  margin:30px auto;
+  background: url(../images/cheesecake.jpg) top left no-repeat;
+  background-size: 100% 100%;
+  -webkit-shape-inside: polygon(28.67px 622.00px,407.50px 621.24px,407.92px 468.85px,331.63px 479.16px,269.48px 472.32px,195.41px 453.89px,143.37px 412.68px,137.33px 315.47px,166.00px 296.47px,198.67px 277.47px,236.63px 227.16px,291.58px 202.85px,349.50px 220.24px,410.33px 231.00px,411.67px 29.53px,31.33px 27.53px);
+  shape-inside: polygon(28.67px 622.00px,407.50px 621.24px,407.92px 468.85px,331.63px 479.16px,269.48px 472.32px,195.41px 453.89px,143.37px 412.68px,137.33px 315.47px,166.00px 296.47px,198.67px 277.47px,236.63px 227.16px,291.58px 202.85px,349.50px 220.24px,410.33px 231.00px,411.67px 29.53px,31.33px 27.53px);
+  /*shape-inside: url(mask.png) top left;*/
+}
+
+.content{
+  padding:0 30px 30px;
+  color:white;
+  font-size:14px;
+}
+.content h2{
+  font-family: 'Qwigley', cursive;
+  font-size:56px;
+  line-height:1;
+  margin: .6em 0 .8em;
+}

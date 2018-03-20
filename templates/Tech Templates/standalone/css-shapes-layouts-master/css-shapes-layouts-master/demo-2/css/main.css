@@ -1,0 +1,35 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  position:relative;
+}
+html, body{
+  min-height:100%;
+  background-color: #ccc;
+} 
+
+.container{
+  width:600px;
+  height:900px;
+  overflow:hidden;
+  margin:30px auto;
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  font-size:13px;
+  background: url(../images/pan.jpg) top left no-repeat;
+  background-size:100% 100%;
+  shape-inside: circle(400px, 60px, 160px);
+  shape-inside: circle(160px at 400px 60px);
+}
+.container h2{
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size:100px;
+  font-weight:normal;
+  line-height:1;
+  margin: .5em 0 .1em;
+  position:relative;
+  top:-1.5em;
+  padding-left:.5em;
+}
+
