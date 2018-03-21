@@ -69,6 +69,10 @@
     <!-- SVG Logo Draw -->
     <link rel="stylesheet" type="text/css" href="css/custom/svg-logo-draw/svg-logo-draw.css"/>
 
+    <!-- Mapbox -->
+    <link rel="stylesheet" type="text/css" href="vendor/mapbox/mapbox-gl.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mapbox-custom.css"/>
+
     <!-- /Stylesheets -->
 
 
@@ -273,6 +277,32 @@
             </div>
         </div>
         <!-- /3D Hover Effects -->
+
+
+        <!-- Mapbox -->
+        <div class="mapbox">
+            <div id='map'></div>
+            <pre id='info'></pre>
+            <button id='fly'>Fly</button>
+
+            <div id='menu'>
+                <input id='basic' type='radio' name='rtoggle' value='basic' >
+                <label for='basic'>basic</label>
+                <input id='streets' type='radio' name='rtoggle' value='streets'>
+                <label for='streets'>streets</label>
+                <input id='bright' type='radio' name='rtoggle' value='bright'>
+                <label for='bright'>bright</label>
+                <input id='light' type='radio' name='rtoggle' value='light'>
+                <label for='light'>light</label>
+                <input id='dark' type='radio' name='rtoggle' value='dark'>
+                <label for='dark'>dark</label>
+                <input id='satellite' type='radio' name='rtoggle' value='satellite' checked='checked'>
+                <label for='satellite'>satellite</label>
+            </div>
+        </div>
+
+        <!-- /Mapbox -->
+        
 
         <!-- Inline Anchor Style -->
         <div class="inline-anchor-cont">
@@ -2412,6 +2442,10 @@
 
             <!-- Creative Buttons -->
             <script src="js/creative-buttons-custom.js"></script>
+
+               <!-- Creative Buttons -->
+            <script src="vendor/mapbox/mapbox-gl.js"></script>
+            <script src="js/mapbox-custom.js"></script>
             <!-- /Scripts -->
 
 </body>
