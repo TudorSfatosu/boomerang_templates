@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Template v1.1</title>
+    <title>Interactive Tech Template v1.11</title>
     <meta name="description" content="Inspiration for on scroll header animations with various effects"/>
     <meta name="keywords" content="on scroll, animate, header, transition, css3, 3d, effect, inspiration"/>
     <meta name="author" content="Codrops"/>
@@ -73,6 +73,9 @@
     <link rel="stylesheet" type="text/css" href="vendor/mapbox/mapbox-gl.css"/>
     <link rel="stylesheet" type="text/css" href="css/mapbox-custom.css"/>
 
+    <!-- Responsive Image Clip -->
+    <link rel="stylesheet" type="text/css" href="css/responsive-image-clip-custom.css"/>
+
     <!-- /Stylesheets -->
 
 
@@ -94,7 +97,8 @@
 
 </head>
 <body>
-<!-- Svg used in the template -->
+
+<!-- Svg Wrap 1 -->
 <div class="svg-wrap">
     <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
         <path id="svg_line"
@@ -106,41 +110,66 @@
     </svg>
     <svg class="svg-logo-draw" id="hm_logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 536.8 307.1" style="enable-background:new 0 0 536.8 307.1;" xml:space="preserve">
-                <g id="Layer_1_1_">
-                    <path id="back-pgon" fill="none" class="st0" d="M92.1,93l143.6,8.2l-31.5,82l16.2,62.8l-92.8-35.8L92.1,93z"/>
-                    <path id="mid-pgon" fill="none" class="st1" d="M235.6,219.2v-42.4l-21.9-8.2L183,113.6l7.9-35.4l-57.4-22.2l0.2,53.8l40.3,47.5L145.5,175
-                        l-3.1,34.3l30.1,8.6L235.6,219.2z"/>
-                    <path id="front-pgon" fill="none" class="st2" d="M135.5,142.8l57-28.8l38.3,44.6l-24.5,72.7L135.5,142.8z"/>
-                    <g>
-                        <path id="let-h" fill="none" class="st0" d="M272.3,159.2v-19.6H263v19.6h-16.3v-55.1H263v19.2h9.3v-19.2h16.3v55.1H272.3z"/>
-                        <path id="let-o" fill="none" class="st0" d="M293.4,139.4c0-11.5,9.4-20.9,21-20.9s20.9,9.4,20.9,20.9c0,11.6-9.4,20.9-20.9,20.9
-                            S293.4,151,293.4,139.4z M314.4,145.8c3.5,0,6.3-2.8,6.3-6.4c0-3.5-2.8-6.3-6.3-6.3c-3.5,0-6.4,2.8-6.4,6.3
-                            C308.1,143,310.9,145.8,314.4,145.8z"/>
-                        <path id="let-m" fill="none" class="st0" d="M357.6,133.5c-1.3,0-2.7,0.8-3.2,2v23.7h-14.6v-39.6h14.6v3.1c2-2.5,5-4.2,9.2-4.2
-                            c3.7,0,7.2,1.6,9.5,4.8c2.3-2.8,5.9-4.8,10.8-4.8c7,0,13,4.6,13,13.7v27.1h-14.6V137c0-2.2-1.3-3.5-3.4-3.5c-1.3,0-2.6,0.8-3.1,2
-                            v23.7H361V137C360.9,134.8,359.7,133.5,357.6,133.5z"/>
-                        <path id="let-e" fill="none" class="st0" d="M437,154.3c-3.8,3.7-9,6.1-14.8,6.1c-11.6,0-20.9-9.4-20.9-20.9c0-11.5,9.4-20.9,20.9-20.9
-                            c11.2,0,21,9,21,21.3c0,1.1,0,2.1-0.2,3.2h-27.3c1.1,2.4,3.6,4.1,6.7,4.1c2,0,4-0.7,5.3-2.1L437,154.3z M415.7,136h13
-                            c-1.2-2.4-3.5-4.1-6.5-4.1S416.9,133.5,415.7,136z"/>
-                    </g>
-                    <g>
-                        <path id="let-m2" fill="none" class="st1" d="M278.3,231.3v-17.8l-6.6,7.7l-6.7-7.7v17.8h-16.3v-56.7l23,26.4l23-26.4v56.7H278.3
-                            L278.3,231.3z"/>
-                        <path id="let-a" fill="none" class="st1" d="M326.7,229.1c-2.1,2-4.9,3.3-9,3.3c-9.7,0-18.2-9.4-18.2-20.9c0-11.5,8.6-20.9,18.2-20.9
-                            c4.1,0,6.9,1.3,9,3.4v-2.3h14.6v39.6h-14.6V229.1z M326.7,207.5c-1.2-1.4-2.9-2.3-4.9-2.3c-3.5,0-6.3,2.8-6.3,6.3
-                            c0,3.5,2.8,6.4,6.3,6.4c2,0,3.7-0.9,4.9-2.4V207.5z"/>
-                        <path id="let-t" fill="none" class="st1" d="M368.1,204.7h-4.5v26.6h-14.7v-26.6h-3.9v-13h3.9V183l14.7-6.3v14.9h4.5V204.7z"/>
-                        <path id="let-c" fill="none" class="st1" d="M406.2,226.3c-3.8,3.7-9,6.1-14.8,6.1c-11.6,0-20.9-9.4-20.9-20.9c0-11.5,9.4-20.9,20.9-20.9
-                            c5.8,0,11,2.4,14.9,6.1L395.9,207c-1.2-1.1-2.8-1.8-4.5-1.8c-3.5,0-6.3,2.8-6.3,6.3c0,3.5,2.8,6.4,6.3,6.4c1.8,0,3.3-0.7,4.4-1.9
-                            L406.2,226.3z"/>
-                        <path id="let-h2" fill="none" class="st1" d="M423.8,194.7c2-2.5,5-4.2,9.2-4.2c6.4,0,12.1,4.6,12.1,13.7v27.1h-14.7V209
-                            c0-2.2-1.3-3.5-3.3-3.5c-1.3,0-2.7,0.8-3.2,2v23.7h-14.6v-55.1h14.6L423.8,194.7L423.8,194.7L423.8,194.7z"/>
-                    </g>
-                </g>
-            </svg>
+        <g id="Layer_1_1_">
+            <path id="back-pgon" fill="none" class="st0" d="M92.1,93l143.6,8.2l-31.5,82l16.2,62.8l-92.8-35.8L92.1,93z"/>
+            <path id="mid-pgon" fill="none" class="st1" d="M235.6,219.2v-42.4l-21.9-8.2L183,113.6l7.9-35.4l-57.4-22.2l0.2,53.8l40.3,47.5L145.5,175
+                l-3.1,34.3l30.1,8.6L235.6,219.2z"/>
+            <path id="front-pgon" fill="none" class="st2" d="M135.5,142.8l57-28.8l38.3,44.6l-24.5,72.7L135.5,142.8z"/>
+            <g>
+                <path id="let-h" fill="none" class="st0" d="M272.3,159.2v-19.6H263v19.6h-16.3v-55.1H263v19.2h9.3v-19.2h16.3v55.1H272.3z"/>
+                <path id="let-o" fill="none" class="st0" d="M293.4,139.4c0-11.5,9.4-20.9,21-20.9s20.9,9.4,20.9,20.9c0,11.6-9.4,20.9-20.9,20.9
+                    S293.4,151,293.4,139.4z M314.4,145.8c3.5,0,6.3-2.8,6.3-6.4c0-3.5-2.8-6.3-6.3-6.3c-3.5,0-6.4,2.8-6.4,6.3
+                    C308.1,143,310.9,145.8,314.4,145.8z"/>
+                <path id="let-m" fill="none" class="st0" d="M357.6,133.5c-1.3,0-2.7,0.8-3.2,2v23.7h-14.6v-39.6h14.6v3.1c2-2.5,5-4.2,9.2-4.2
+                    c3.7,0,7.2,1.6,9.5,4.8c2.3-2.8,5.9-4.8,10.8-4.8c7,0,13,4.6,13,13.7v27.1h-14.6V137c0-2.2-1.3-3.5-3.4-3.5c-1.3,0-2.6,0.8-3.1,2
+                    v23.7H361V137C360.9,134.8,359.7,133.5,357.6,133.5z"/>
+                <path id="let-e" fill="none" class="st0" d="M437,154.3c-3.8,3.7-9,6.1-14.8,6.1c-11.6,0-20.9-9.4-20.9-20.9c0-11.5,9.4-20.9,20.9-20.9
+                    c11.2,0,21,9,21,21.3c0,1.1,0,2.1-0.2,3.2h-27.3c1.1,2.4,3.6,4.1,6.7,4.1c2,0,4-0.7,5.3-2.1L437,154.3z M415.7,136h13
+                    c-1.2-2.4-3.5-4.1-6.5-4.1S416.9,133.5,415.7,136z"/>
+            </g>
+            <g>
+                <path id="let-m2" fill="none" class="st1" d="M278.3,231.3v-17.8l-6.6,7.7l-6.7-7.7v17.8h-16.3v-56.7l23,26.4l23-26.4v56.7H278.3
+                    L278.3,231.3z"/>
+                <path id="let-a" fill="none" class="st1" d="M326.7,229.1c-2.1,2-4.9,3.3-9,3.3c-9.7,0-18.2-9.4-18.2-20.9c0-11.5,8.6-20.9,18.2-20.9
+                    c4.1,0,6.9,1.3,9,3.4v-2.3h14.6v39.6h-14.6V229.1z M326.7,207.5c-1.2-1.4-2.9-2.3-4.9-2.3c-3.5,0-6.3,2.8-6.3,6.3
+                    c0,3.5,2.8,6.4,6.3,6.4c2,0,3.7-0.9,4.9-2.4V207.5z"/>
+                <path id="let-t" fill="none" class="st1" d="M368.1,204.7h-4.5v26.6h-14.7v-26.6h-3.9v-13h3.9V183l14.7-6.3v14.9h4.5V204.7z"/>
+                <path id="let-c" fill="none" class="st1" d="M406.2,226.3c-3.8,3.7-9,6.1-14.8,6.1c-11.6,0-20.9-9.4-20.9-20.9c0-11.5,9.4-20.9,20.9-20.9
+                    c5.8,0,11,2.4,14.9,6.1L395.9,207c-1.2-1.1-2.8-1.8-4.5-1.8c-3.5,0-6.3,2.8-6.3,6.3c0,3.5,2.8,6.4,6.3,6.4c1.8,0,3.3-0.7,4.4-1.9
+                    L406.2,226.3z"/>
+                <path id="let-h2" fill="none" class="st1" d="M423.8,194.7c2-2.5,5-4.2,9.2-4.2c6.4,0,12.1,4.6,12.1,13.7v27.1h-14.7V209
+                    c0-2.2-1.3-3.5-3.3-3.5c-1.3,0-2.7,0.8-3.2,2v23.7h-14.6v-55.1h14.6L423.8,194.7L423.8,194.7L423.8,194.7z"/>
+            </g>
+        </g>
+    </svg>
 </div>
 
-<div></div>
+<!-- Svg Wrap 2 -->
+<div class="image-clip-container">
+    <div class="svg-wrap2">
+      <svg class="clip-svg" width="2000" height="1000">
+        <defs>
+          <path d="M3.7,668.2c41.4,8.3,1415.1,79.7,1415.1,79.7l584.9-59V6.7L497.5,89.6L5.7,39.9L3.7,668.2z" fill="none" id="thePath2" stroke="" stroke-width=""></path>
+        </defs>
+        <clippath id="cloudClip2">
+          <use xlink:href="#thePath2"></use>
+        </clippath>
+        <use xlink:href="#thePath2"></use>
+      </svg>
+
+      <svg class="clip-svg" width="2000" height="1000">
+        <defs>
+          <path d="M0.9,1236.3c41.4,16.7,1578.7,196.1,1578.7,196.1l421-100.5V45.1l-1196,138.7L0.6,4.1L0.9,1236.3z" fill="none" id="thePathMobile2" stroke="" stroke-width=""></path>
+        </defs>
+
+        <clippath id="cloudClipMobile2">
+          <use xlink:href="#thePathMobile2"></use>
+        </clippath>
+        <use xlink:href="#thePathMobile2"></use>
+      </svg>
+    </div>
+</div>
+
 
 <!-- Hero Parallax -->
 <div id='hero'>
@@ -302,6 +331,46 @@
         </div>
 
         <!-- /Mapbox -->
+
+        <!-- Repsonive Image Clip -->
+        <div class="image-clip-container">
+          <svg class="svg--lg clip-svg" width="0" height="0" viewbox="0 0 2000 1000">
+            <image clip-path="url(#cloudClip2)" height="1100" href="img/banners/Aerial-view-of-traditional-housing-suburbs-cross-roads-in-England.jpg" width="2000"></image>
+          </svg>
+          <svg class="svg--sm" viewbox="0 0 2000 1900">
+            <image clip-path="url(#cloudClipMobile2)" height="1900" width="2000" xlink:href="img/banners/Aerial-view-of-traditional-housing-suburbs-cross-roads-in-England-mobile.jpg"></image>
+          </svg>
+
+
+
+          <svg class="svg--lg clip-svg" width="2000" height="1000" height="0" viewbox="0 0 2000 1000" width="0">
+            <image clip-path="url(#cloudClip2)" height="1100" href="img/banners/Roundabout.jpg" width="2000"></image>
+          </svg> 
+          <svg class="svg--sm" viewbox="0 0 2000 1900">
+            <image clip-path="url(#cloudClipMobile2)" height="1900" width="2000" xlink:href="img/banners/Roundabout-mobile.jpg"></image>
+          </svg>
+
+
+
+
+          <svg class="svg--lg clip-svg" width="2000" height="1000" height="0" viewbox="0 0 2000 1000" width="0">
+            <image clip-path="url(#cloudClip2)" height="1100" href="img/banners/Top-view-of-fitness-female-and-male-running.jpg" width="2000"></image>
+          </svg> 
+          <svg class="svg--sm" viewbox="0 0 2000 1900">
+            <image clip-path="url(#cloudClipMobile2)" height="1900" width="2000" xlink:href="img/banners/Top-view-of-fitness-female-and-male-running-mobile.jpg"></image>
+          </svg>
+
+
+
+
+           <svg class="svg--lg clip-svg" width="2000" height="1000" height="0" viewbox="0 0 2000 1000" width="0">
+            <image clip-path="url(#cloudClip2)" height="1100" href="img/banners/aerial-view-of-road-on-sea-coastal.jpg" width="2000"></image>
+          </svg> 
+          <svg class="svg--sm" viewbox="0 0 2000 1900">
+            <image clip-path="url(#cloudClipMobile2)" height="1900" width="2000" xlink:href="img/banners/aerial-view-of-road-on-sea-coastal-mobile.jpg"></image>
+          </svg> 
+        </div>
+        <!--/Responsive Image Clip -->
         
 
         <!-- Inline Anchor Style -->
@@ -2141,7 +2210,7 @@
                                     <use xlink:href="#hm_logo">
                                 </svg>
                                 <img class="svg-logo-replacement svg-logo-replacement--navbar" src="img/svg-logo-draw/home-match-logo.png" alt="Home Match Logo">
-                                <span>Boomerang Tech Template v1.1</span>
+                                <span>Interactive Tech Template v1.11</span>
                             </h1>
                             <nav>
                                 <a href="view-homes.html">Homes</a>
