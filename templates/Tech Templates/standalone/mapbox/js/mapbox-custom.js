@@ -31,6 +31,8 @@ map.on('mousemove', function (e) {
         JSON.stringify(e.lngLat);
 });
 
+
+
 var isAtStart = true;
 
 document.getElementById('fly').addEventListener('click', function() {
@@ -45,8 +47,9 @@ document.getElementById('fly').addEventListener('click', function() {
         // These options control the ending camera position: centered at
         // the target, at zoom level 9, and north up.
         center: target,
-        zoom: 9,
-        bearing: 0,
+        zoom: 10,
+        pitch: 60, // pitch in degrees
+        bearing: -60, // bearing in degrees
 
         // These options control the flight curve, making it move
         // slowly and zoom out almost completely before starting

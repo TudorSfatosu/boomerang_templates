@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700,900);
+
+$nav: rgba(238, 236, 225, 0.95);
+$height: 108px;
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  background: #242430;
+}
+
+header {
+  background-image: url(https://ununsplash.imgix.net/uploads/141319062591093cefc09/ad50c1f0?q=75&fm=jpg&s=a356dd61ff3da2269124bcd12a303b7e);
+  background-size: cover;
+  background-position: bottom;
+  margin: 0 auto;
+  height: 300px;
+/*   width: 800px; */
+  position: relative;
+  overflow-x: hidden;
+  
+}
+
+header nav {
+  position: absolute;
+  bottom: calc(50% - 54px);
+  width: 100%;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  &:before {
+    display: block;
+    position: relative;
+    left: -100%;
+    top: $height;
+    content: "";
+    height: $height;
+    background: $nav;
+  }
+  &:after {
+    display: block;
+    position: absolute;
+    left: 99%;
+    top: $height;
+    content: "";
+    width: 100%;
+    height: $height;
+    background: $nav;
+  }
+}
+
+header nav ul li {
+  display: inline-block;
+  width: 20.25%;
+  margin: 0 -1px;
+  text-align: center;
+  background: $nav;
+  font-size: 21px;
+  -webkit-clip-path: polygon(50% 0, 70% 0, 100% 0, 100% 100%, 70% 100%, 50% 100%, 30% 100%, 0 100%, 0 0, 30% 0);
+  clip-path: polygon(50% 0, 70% 0, 100% 0, 100% 100%, 70% 100%, 50% 100%, 30% 100%, 0 100%, 0 0, 30% 0);
+  transition: all .3s;
+  &:hover {
+    -webkit-clip-path: polygon(50% 20%, 70% 0, 100% 0, 100% 100%, 70% 100%, 50% 80%, 30% 100%, 0 100%, 0 0, 30% 0);
+    clip-path: polygon(50% 20%, 70% 0, 100% 0, 100% 100%, 70% 100%, 50% 80%, 30% 100%, 0 100%, 0 0, 30% 0);
+  }
+}
+
+header nav a {
+  padding: 26px 0;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #222;
+  i.fa {
+    transform: none;
+  }
+}
