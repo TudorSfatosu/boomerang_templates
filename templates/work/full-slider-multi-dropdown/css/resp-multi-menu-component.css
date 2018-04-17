@@ -214,7 +214,7 @@ All this is done for any sub-level being entered.
 @-webkit-keyframes MenuAnimOut2 {
 	0% { }
 	100% {
-		-webkit-transform: translateX(-100%);
+		-webkittransform: translateX(-100%);
 		opacity: 0;
 	}
 }
