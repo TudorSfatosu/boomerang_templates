@@ -172,11 +172,11 @@ body:before {
 	text-transform:	uppercase;
     display: block;
     position: absolute;
-    z-index: 999;
+    z-index: 1;
+    width: 10%;
+    margin-left: 45%;
     font-size: 6em;
     color: white;
-    margin: 0 auto;
-    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
